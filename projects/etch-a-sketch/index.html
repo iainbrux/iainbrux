@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>Etch-a-Sketch | iainbruX</title>
+
+<body>
+    <header>
+        <h1>iainbrux Etch-a-Sketch</h1>
+    </header>
+    <div class="grid">
+        <div class="controls">
+            <div class="select-size">
+                <p class="selection-header">Select grid size</p>
+                <input type="radio" id="sixteen" name="grid-size" value="16" checked="true">
+                <label for="sixteen">16 x 16</label>
+                <br>
+                <input type="radio" id="thirty-two" name="grid-size" value="32">
+                <label for="thirty-two">32 x 32</label>
+                <br>
+                <input type="radio" id="sixty-four" name="grid-size" value="64">
+                <label for="sixty-four">64 x 64</label>
+                <br>
+                <p class="selection-header">Select your color</p>
+                <input type="radio" id="rgb-button" name="color-select">
+                <label for="rgb-button">RGB!</label>
+                <br>
+                <input type="radio" id="blue-button" name="color-select" checked="true">
+                <label for="blue-button">Blue</label>
+                <br>
+                <input type="radio" id="red-button" name="color-select">
+                <label for="red-button">Red</label>
+                <br>
+                <input type="radio" id="yellow-button" name="color-select">
+                <label for="yellow-button">Yellow</label>
+                <br>
+                <p class="range-header">Choose your own grid size</p>
+                <input type="range" id="size-slider" name="grid-size" min="8" max="100" value="16" step="1" />
+                <p class="range-header-size">Size: <span id="size-value" class="range-header-size"></span></p>
+                <p class="color-header">Choose your own color</p>
+                <input type="color" id="color-picker">
+                <p class="range-header-size">Hex: <span id="color-value" class="range-header-size"></span></p>
+                <div class="clear-grid">
+                    <p class="clear-grid-header">Clear grid</p>
+                    <input type="button" id="reset-button" name="grid-clear" value="Clear">
+                </div>
+            </div>
+        </div>
+
+        <div class="container-div">
+            <div id="container">
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="main.js"></script>
+
+</html>

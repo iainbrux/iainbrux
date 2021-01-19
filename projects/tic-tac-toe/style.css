@@ -1,0 +1,81 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.content header {
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    margin: 20px auto;
+}
+
+.scoreboard {
+    display: inline-flex;
+}
+
+.scoreboard .user-score {
+    margin: 20px 60px;
+}
+
+.scoreboard .comp-score {
+    margin: 20px 60px;
+}
+
+.container {
+    border: 3px solid black;
+    align-self: stretch;
+    height: 600px;
+    width: 600px;
+    background-color: pink;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content {
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    align-self: stretch;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.box {
+    border: 2px solid pink;
+    background-color: white;
+    width: 30%;
+    flex-grow: 1;
+}
+
+.active {
+    background-image: url('imgs/resized-image-Promo.jpeg');
+    background-color: rgba(255, 255, 255, 1);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.box--X {
+    background-image: url('imgs/resized-image-Promo.jpeg');
+    background-color: rgba(255, 255, 255, 1);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.box--O {
+    background-image: url('imgs/Nought.png');
+    background-color: rgba(255, 255, 255, 1);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.reset-button {
+    display: none;
+}

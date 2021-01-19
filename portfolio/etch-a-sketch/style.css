@@ -1,0 +1,224 @@
+#container {
+    background-color: rgba(128, 128, 128, 0.2);
+    opacity: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 720px;
+    height: 720px;
+    min-width: 720px;
+    min-height: 720px;
+}
+
+body {
+    background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/email-pattern.png");
+}
+
+.sq {
+    border: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+.mouseover {
+    background-color: black;
+}
+
+.container-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.grid {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: space-around;
+}
+
+.clear-grid {
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-end;
+    align-self: flex-start;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    min-width: 250px;
+}
+
+.range-header {
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    min-width: 250px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.range-header-size {
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+}
+
+.selection-header {
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    min-width: 250px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+header {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    color: #01cc65;
+}
+
+.clear-grid {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.clear-grid-header {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.color-header {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    color: #01cc65;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    border: 2px solid #01cc65;
+    border-radius: 5px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    background-color: white;
+}
+
+label:before {
+    content: "";
+    border-radius: 50%;
+    background-color: white;
+    transition-duration: 0.4s;
+}
+
+label:hover {
+    background-color: #01cc65;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+input[type="radio"]:checked+label {
+    background-color: #01cc65;
+    color: white;
+}
+
+input[type="radio"]:checked+label:before {
+    background-color: #01cc65;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    color: #01cc65;
+}
+
+input[type=range] {
+    width: 100%;
+    margin: 7.3px 0;
+    background-color: transparent;
+    -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    background: #01cc65;
+    border: 0.2px solid #01cc65;
+    border-radius: 1.3px;
+    width: 100%;
+    height: 11.4px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    margin-top: -7.5px;
+    width: 26px;
+    height: 26px;
+    background: #ffffff;
+    border: 1.8px solid #01cc65;
+    border-radius: 15px;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #01cc65;
+}
+
+input[type="range"]:hover::-webkit-slider-runnable-track {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+input[type="button"] {
+    background-color: #ffffff;
+    color: #01cc65;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: 2px solid #01cc65;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 20px;
+    outline: none;
+}
+
+input[type="button"]:hover {
+    background-color: #01cc65;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+input[type="button"]:focus {
+    border-color: #01cc65;
+}
+
+input[type="color"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    outline: none;
+    border: none;
+}

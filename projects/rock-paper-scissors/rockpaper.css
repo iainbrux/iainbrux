@@ -1,0 +1,121 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header-welcome {
+    font-size: 52px;
+    color: #f062b7;
+    text-align: center;
+}
+
+.header-selection {
+    font-size: 34px;
+    color: #628ff0;
+    text-align: center;
+}
+
+#buttons {
+    min-width: 70vw;
+    font-family: 'Roboto Mono', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.btn1 {
+    border: 3px solid #7f66ed;
+    width: 250px;
+    border-radius: 10px;
+    color: white;
+    transition-duration: 0.3s;
+    background-color: #7f66ed;
+    text-align: center;
+    font-size: 28px;
+    height: 200px;
+    outline: none;
+}
+
+.btn1:hover,
+.btn2:hover,
+.btn3:hover {
+    color: black;
+    background-color: white;
+    transform: scale(1.05);
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+
+.btn2 {
+    border: 3px solid #3dff36;
+    width: 250px;
+    border-radius: 10px;
+    color: white;
+    transition-duration: 0.3s;
+    background-color: #3dff36;
+    text-align: center;
+    font-size: 28px;
+    height: 200px;
+    outline: none;
+}
+
+.btn3 {
+    border: 3px solid #ff3636;
+    width: 250px;
+    border-radius: 10px;
+    color: white;
+    transition-duration: 0.3s;
+    background-color: #ff3636;
+    text-align: center;
+    font-size: 28px;
+    height: 200px;
+    outline: none;
+}
+
+body {
+    background-color: #e2f5dc;
+    font-family: 'Roboto Mono', sans-serif;
+    background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/beige-tiles.png");
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+.scoreboard {
+    text-align: center;
+    font-size: 28px;
+    color: #eb6434;
+}
+
+#results {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#playertotal,
+#computertotal {
+    font-size: 22px;
+    margin: 5%;
+}
+
+#round {
+    text-align: center;
+    font-size: 22px;
+}
+
+button {
+    font-family: 'Roboto Mono', sans-serif;
+}
+
+.watermark {
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}

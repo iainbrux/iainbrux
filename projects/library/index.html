@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Library.js | iainbrux</title>
+</head>
+
+<body>
+	<div class="content">
+		<header>Library.js</header>
+		<div class="container">
+			<section>
+				<div class="card-design card active">
+					<div class="title"></div>
+					<div class="author"></div>
+					<div class="pages"></div>
+					<div class="status">
+						<div class="read">
+							Read?
+							<label for="readbox0" class="switch">
+								<input type="checkbox" class="readbox" id="readbox0">
+								<span class="slider round"></span>
+							</label>
+						</div>
+						<div class="delete">Remove</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="card-design card active">
+					<div class="title"></div>
+					<div class="author"></div>
+					<div class="pages"></div>
+					<div class="status">
+						<div class="read">
+							Read?
+							<label class="switch" for="readbox1">
+								<input type="checkbox" class="readbox" id="readbox1">
+								<span class="slider round"></span>
+							</label>
+						</div>
+						<div class="delete">Remove</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="card-design card">
+					<div class="title"></div>
+					<div class="author"></div>
+					<div class="pages"></div>
+					<div class="status">
+						<div class="read">
+							Read?
+							<label class="switch" for="readbox2">
+								<input type="checkbox" class="readbox" id="readbox2">
+								<span class="slider round"></span>
+							</label>
+						</div>
+						<div class="delete">Remove</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<div class="add-book-button">
+			NEW BOOK
+		</div>
+		<div class="bg-modal">
+			<div class="modal-content">
+				<div class="exit">+</div>
+				<div class="modal-title">Enter a book...</div>
+				<form action="">
+					<label class="input-fields">
+						<input type="text" name="input-book" id="title" placeholder="Title">
+						<input type="text" name="input-book" id="author" placeholder="Author">
+						<input type="number" name="input-book" id="pages" placeholder="Pages">
+					</label>
+					<div class="modal-read">Read?</div>
+					<label class="switch input-status" for="modal-readbox">
+						<input type="checkbox" class="readbox" id="modal-readbox">
+						<span class="slider round"></span>
+					</label>
+				</form>
+				<div class="submit">
+					ADD
+				</div>
+			</div>
+		</div>
+		<div class="watermark">
+			Library.js is made by iainbrux, as part of his Web Dev portfolio.<br>
+			<a href="https://github.com/iainbrux" target="_blank">
+				<img
+					src="https://lh3.googleusercontent.com/YLwfKoJxx6L6izKRBObXAbOQMP9qwYeycdQyoO5oP5NYDxPPEi3BFmt0qUkdymOLWQc8GTC3WZEnxtRclE9A-d3EhDRgZAZZenVAWF7MHW2rU8MT_JcOcl0OzGWqjpdHAhX_k0AerEpoGzlFvDuyT1DmFcDTcEZhzSdezNVgKmIsb6kRbhfFSJ39y3NQIFnQ4bnP-yQnTnFcMlcPsCx6651dDcs-jYXMdb4dODVKqiFZO9LIhtjQJ9lxkh1h-uP8nUfv5fZGUIdqf2FyWN1Mmm6pNGTdZ2Av1JJxwJa889GzqtPdk7RsZFgGnijWWUuFLy5YmIhsDrsiP2ClMD1BGaJbYEz5dNlk6QBugqewb-9yoPrFebkB7uKETnMGbB9WSZ7OLoFM82xx2Skci8aB9N4u5i8uPm7cziJ4e_Sv-IP9WEVRZWqdPUfPVSf02VfnChsKqVsRrvIWP5AaEdYIQV0_cYNYQMs2xZrjCWVSqGTnKDhdZqxJb3z7go4VGwO1275cw11qANC1bWM-2yk6dPfv8oXdF3Vw2nIQd48DoJVoq0f05TG0-NYfC1BNC_-A5aW1kEmYZhETq2TckzAQJTRnpmAmkW0wVDhWTDpikq6gRwOgF-8qQ1Qh3ddMwwxCR7TX67PVcnmnK6tHF_A7iitk__Dh0vz7L0LXAMJ2nU_ecN7jKSodjKguGidYdQ=s32-no?authuser=0">
+			</a>
+		</div>
+	</div>
+		<!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+		<!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+		<script src="/__/firebase/8.2.2/firebase-app.js"></script>
+
+		<!-- Add Firebase products that you want to use -->
+		<script src="/__/firebase/8.2.2/firebase-auth.js"></script>
+		<script src="/__/firebase/8.2.2/firebase-firestore.js"></script>
+</body>
+<footer>
+	<script type="text/javascript" src="main.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+	</style>
+</footer>
+
+</html>
