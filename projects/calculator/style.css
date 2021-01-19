@@ -1,0 +1,178 @@
+@font-face {
+    src: url(fonts/digital-7.ttf);
+    font-family: digital-7;
+}
+
+body {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/email-pattern.png");
+}
+
+header {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 40px;
+    margin: 20px 20px 50px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    flex-direction: column;
+    margin-top: 100px;
+    font-size: 14px;
+}
+
+img {
+    margin-top: 30px;
+}
+
+.container {
+    min-height: 580px;
+    min-width: 480px;
+    max-width: 480px;
+    max-height: 640px;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: rgba(232, 211, 226, 1);
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    margin: 0% 2% 2% 2%;
+}
+
+.display {
+    display: flex;
+    flex-grow: 1;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 5px;
+    min-height: 180px;
+    size: auto;
+    margin: 2% 2% 0% 2%;
+    background-color: lightgray;
+}
+
+.numbers-display {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 2%;
+    font-family: 'digital-7', sans-serif;
+    font-size: 55px;
+}
+
+.operator-display {
+    display: flex;
+    align-items: center;
+    margin: 2%;
+    font-family: 'digital-7', sans-serif;
+    font-size: 20px;
+}
+
+.past-display {
+    display: flex;
+    align-items: center;
+    margin: 2%;
+    font-family: 'digital-7', sans-serif;
+    font-size: 35px;
+}
+
+.row1,
+.row2,
+.row3,
+.row4,
+.row5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+input {
+    color: black;
+    font-size: 20px;
+    border-radius: 9px;
+    padding: 20px;
+    display: flex;
+    cursor: pointer;
+    transition-duration: 0.1s;
+    background-color: rgba(221, 211, 232, 1)
+}
+
+input[type="button"] {
+    font-family: 'Poppins', sans-serif;
+}
+
+input[type="button"]:before {
+    content: "";
+    border-radius: 50%;
+    background-color: white;
+    transition-duration: 0.4s;
+    font-family: 'Poppins', sans-serif;
+}
+
+input[type="button"]:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    font-family: 'Poppins', sans-serif;
+}
+
+.active {
+    background-color: black;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    font-family: 'Poppins', sans-serif;
+}
+
+input[type="button"]:focus {
+    outline: none;
+}
+
+.row1 {
+    margin-top: 2%;
+}
+
+
+
+#cancel-entry,
+#exponent,
+#factorial,
+#backspace,
+#seven,
+#eight,
+#nine,
+#divide,
+#four,
+#five,
+#six,
+#multiply,
+#one,
+#two,
+#three,
+#minus,
+#decimal,
+#zero,
+#equals,
+#add {
+    width: 30%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: auto;
+}
