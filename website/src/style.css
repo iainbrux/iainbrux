@@ -1,0 +1,254 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background: url('./imgs/macbook.jpeg');
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+main, header {
+    z-index: 10;
+    position: relative;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 2;
+    background-color: rgba(0,0,0,0.7);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header.is-home {
+    background-image: url('./imgs/header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 99vw;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-size: cover;
+    color: lightgrey;
+    border-bottom: 2px solid grey;
+}
+
+header .portrait img {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.bio {
+    display: block;
+    margin: 0 auto;
+}
+
+.bio h1 {
+    text-align: center;
+}
+
+header .contact img {
+    height: 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact .email {
+    font-size: 10px;
+    margin-bottom: 20px;
+}
+
+.tabs {
+    padding-top: 20px;
+    display: flex;
+    width: 30%;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: grey;
+}
+
+.tabs .home,
+.tabs .portfolio,
+.tabs .about,
+.tabs .contact {
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: grey;
+    padding: 5px;
+}
+
+.tabs .home:hover,
+.tabs .portfolio:hover,
+.tabs .about:hover,
+.tabs .contact:hover {
+    transition-duration: 0.5s;
+    cursor: pointer;
+    border-bottom: 1px solid lightgrey;
+    color: lightgrey;
+}
+
+.tabs .active {
+    transition-duration: 0.5s;
+    cursor: pointer;
+    border-bottom: 1px solid lightgrey;
+    color: lightgrey;
+}
+
+main {
+    background-size: cover;
+    color: rgb(177, 177, 177);
+}
+
+.main-container {
+    flex: 1 0 auto;
+    background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0.5));
+}
+
+.main .home {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    color: white;
+    flex: 1;
+}
+
+.box {
+    margin: 0 30px;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+.box h2 {
+    margin: 50px auto;
+    text-align: center;
+    font-size: 35px;
+}
+
+.git-div {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px auto;
+}
+
+.div-image {
+    position: relative;
+}
+
+.div-image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,8));
+    z-index: 0;
+}
+
+.git-src,
+.git-live {
+    border: 1px solid white;
+    padding: 20px;
+    border-radius: 15px;
+    font-weight: bolder;
+    word-wrap: normal;
+}
+
+.git-src {
+    background-color: #111111;
+    transition-duration: 0.5s;
+}
+
+.git-src:hover {
+    background-color: #00ca8e;
+    color: black;
+}
+
+.git-live {
+    background-image: linear-gradient(to top right, #00ca8e, rgb(47, 224, 255));
+    color: black;
+}
+
+.main-container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+section.portfolio {
+    padding: 20px;
+}
+
+section.portfolio .portfolio-container {
+    display: flex;
+    justify-content: center;
+}
+
+section.portfolio .portfolio-container .box {
+    flex:1;
+}
+
+section.portfolio .portfolio-container .box img {
+    max-width: 100%;
+}
+
+
+.wrapper {
+    width: 1180px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.box.title {
+    border-bottom: solid white 1px;
+}
+
+.content {
+    height: 100%;
+    width: 100%;
+}
